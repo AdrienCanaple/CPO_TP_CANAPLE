@@ -16,17 +16,16 @@ public class TP2_Bieres_CANAPLE {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        BouteilleBiere uneBiere = new BouteilleBiere ();
-        uneBiere.Nom = "Cuvée des trolls";
-        uneBiere.degreAlcool = (float) 7.0 ;
-        uneBiere.brasserie = "Dubuisson";
-        uneBiere.ouverte = false;
-        uneBiere.lireEtiquette();
-        BouteilleBiere secondeBiere = new BouteilleBiere();
-        secondeBiere.Nom = "Leffe";
-        secondeBiere.degreAlcool = (float) 6.6;
-        secondeBiere.brasserie = "Abbaye de Leffe";
-        secondeBiere.lireEtiquette();
+        
+        BouteilleBiere UneBiere = new BouteilleBiere ("Leffe",6.6,"Abbaye de Leffe");
+        BouteilleBiere DeuxBiere = new BouteilleBiere ("Despe",7,"despe");
+        BouteilleBiere TroisBiere = new BouteilleBiere ("Pelican",7.6,"Pel");
+        BouteilleBiere QuatreBiere = new BouteilleBiere ("8.6",9,"Abbaye du 86");
+        
+        QuatreBiere.Décapsuler();
+        DeuxBiere.Décapsuler();
+        
+        System.out.println(DeuxBiere) ;
+        System.out.println(TroisBiere);
     }
-    
 }
