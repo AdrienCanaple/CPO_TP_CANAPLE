@@ -9,30 +9,37 @@ package tp2_convertisseurobjet_canaple;
  * @author adrie
  */
 public class Convertisseur {
-    int nbConversion;
-    
-public int CelciusVersKelvin (int tCelcius){
+    int nbConversion = 0;
+
+    public Convertisseur() {
+    }
+public double CelciusVersKelvin (double tCelcius){
         tCelcius = tCelcius+273;
         return tCelcius;
     }
-    public int KelvinVersCelcius (int tKelvin){
+    public double KelvinVersCelcius (double tKelvin){
         tKelvin = tKelvin-273;
         return tKelvin;
     }
-    public int FarenheitVersCelcius (int tFarenheit){
+    public double FarenheitVersCelcius (double tFarenheit){
         tFarenheit = (tFarenheit-32)*5/9;
         return tFarenheit;
     }
-    public int CelciusVersFarenheit (int tCelcius){
+    public double CelciusVersFarenheit (double tCelcius){
         tCelcius = (tCelcius*9/5)+32;
         return tCelcius;
     }
-    public int KelvinVersFarenheit (int tKelvin){
+    public double KelvinVersFarenheit (double tKelvin){
         tKelvin = ((tKelvin-273)*9/5)+32;
         return tKelvin;
     }
-    public int FarenheitVersKelvin (int tFarenheit){
+    public double FarenheitVersKelvin (double tFarenheit){
         tFarenheit = (tFarenheit-32)*5/9+273;
         return tFarenheit;
+    }
+
+    @Override
+    public String toString() {
+        return "Convertisseur{" + "nbConversion=" + nbConversion + '}';
     }
 }
