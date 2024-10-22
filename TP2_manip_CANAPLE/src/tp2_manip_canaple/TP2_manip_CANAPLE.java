@@ -5,6 +5,8 @@
  */
 package tp2_manip_canaple;
 
+import java.util.Arrays;
+
 /**
  *
  * @author adrie
@@ -28,9 +30,14 @@ public class TP2_manip_CANAPLE {
     System.out.println("nb de calories de Assiette 3 : " +
     assiette3.nbCalories) ;
         
+    Moussaka [] tableauMoussaka = new Moussaka[10];
+    
+    
     for (int i=0;i<10;i++){
-        Moussaka assietteMouss[i] = new Moussaka(400+50*i);
+        Moussaka assietteMouss = new Moussaka(400+50*i);
+        tableauMoussaka[i] = assietteMouss;
     }
+    System.out.println(Arrays.toString(tableauMoussaka));
     }
     
 }
