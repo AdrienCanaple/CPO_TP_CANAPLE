@@ -28,9 +28,27 @@ public class Personne {
     }
     public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
         
-        if Proprietaire == null{
+        if (voiture_a_ajouter.Proprietaire != null){
             return false;
         }
+        if (nbVoitures>=3){
+            return false;
+        }
+        else{
+            if (nbVoitures == 0){
+            liste_voitures [0] = voiture_a_ajouter;
+        }
+        else if (nbVoitures == 1){
+            liste_voitures [1] = voiture_a_ajouter;
+        }
+        else if (nbVoitures == 2){
+            liste_voitures [2] = voiture_a_ajouter;
+        }
+        nbVoitures++;
+        voiture_a_ajouter.Proprietaire = this ; 
+        return true;
+        }
+        
 
 }
 
