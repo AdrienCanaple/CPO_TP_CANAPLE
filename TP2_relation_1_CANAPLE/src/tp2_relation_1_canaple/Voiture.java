@@ -20,12 +20,13 @@ public class Voiture {
         this.Modele = Modele;
         this.Marque = Marque;
         this.PuissanceCV = PuissanceCV;
+        Proprietaire = null;
 
     }
 
     @Override
     public String toString() {
-        return "Voiture{" + "Modele=" + Modele + ", Marque=" + Marque + ", PuissanceCV=" + PuissanceCV + '}';
+        return "une " +Marque +" "+ Modele + " de "+ PuissanceCV + "CV";
     }
     
 }
