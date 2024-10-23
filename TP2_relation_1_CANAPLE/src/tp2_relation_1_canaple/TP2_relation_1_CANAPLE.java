@@ -29,12 +29,9 @@ bob.liste_voitures[0] = uneClio ;
 bob.nbVoitures = 1 ;
 uneClio.Proprietaire = bob ;
 
-bob.liste_voitures[1] = uneAutreClio;
-bob.nbVoitures = 2;
-uneAutreClio.Proprietaire = bob;
 
 reno.liste_voitures[1] = une2008;
-reno.nbVoitures = 2;
+reno.nbVoitures = 1;
 une2008.Proprietaire = reno;
 
 System.out.println("la premiere voiture de Bob est " +
@@ -46,11 +43,15 @@ System.out.println("la deuxieme voiture de reno est " +
 reno.liste_voitures[1] ) ;
 
 reno.liste_voitures[0] = uneMicra;
-reno.nbVoitures = 1;
+reno.nbVoitures = 2;
 uneMicra.Proprietaire = reno;
 
 System.out.println("la premiere voiture de reno est " +
 reno.liste_voitures[0] ) ;
+
+reno.ajouter_voiture(uneAutreClio);
+System.out.println("la troisieme voiture de reno est " +
+reno.liste_voitures[2] ) ;
     }
     
 }
