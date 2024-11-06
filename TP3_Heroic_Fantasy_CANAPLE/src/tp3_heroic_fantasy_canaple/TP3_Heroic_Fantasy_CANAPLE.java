@@ -15,9 +15,7 @@ public class TP3_Heroic_Fantasy_CANAPLE {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        Armes pistolet = new Armes ("pistolet", 100);
-        System.out.println(pistolet);
+       
     }
     
 }
