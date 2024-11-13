@@ -4,6 +4,9 @@
  */
 package tp3_heroic_fantasy_canaple;
 
+import personnages.personnages;
+import personnages.Magicien;
+import personnages.Guerrier;
 import Armess.Baton;
 import Armess.Epee;
 import Armess.Armes;
@@ -39,6 +42,25 @@ public class TP3_Heroic_Fantasy_CANAPLE {
             affichage = affichage + weapon.get(i)+"\n";
         }
         System.out.println(affichage);
+        
+        Magicien Gandalf = new Magicien("Gandalf",65,true);
+        Magicien Garcimore = new Magicien ("Garcimore", 44,false);
+        
+        Guerrier Conan = new Guerrier ("Conan",78,false);
+        Guerrier Lannister = new Guerrier("Lannister",45,true);
+        
+        ArrayList <personnages> Personnages = new ArrayList ();
+        Personnages.add(Gandalf);
+        Personnages.add(Garcimore);
+        Personnages.add(Conan);
+        Personnages.add(Lannister);
+        
+        int taille2 = Personnages.size();
+        String affichage2 ="";
+        for(int i = 0; i<taille2; i++){
+            affichage2 = affichage2 + Personnages.get(i)+"\n";
+        }
+        System.out.println(affichage2);
     }
     
 }
