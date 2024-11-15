@@ -18,7 +18,7 @@ public class Magicien extends personnages {
 
     @Override
     public String toString() {
-        return "Magicien{ nom = "+ nom +" niveau de vie = "+ niveauDeVie + " confirmé = " + confirmé + '}';
+        return "Magicien{ nom = "+ nom +" niveau de vie = "+ niveauDeVie + " confirmé = " + confirmé + " Arme en main = " + armeEnMain+'}';
     }
 
     public void setConfirmé(boolean confirmé) {
