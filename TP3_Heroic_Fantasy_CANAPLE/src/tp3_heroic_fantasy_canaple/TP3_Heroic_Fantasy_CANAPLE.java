@@ -55,6 +55,18 @@ public class TP3_Heroic_Fantasy_CANAPLE {
         Personnages.add(Conan);
         Personnages.add(Lannister);
         
+       
+        
+        Gandalf.ajouterUneArme(Charme);
+        Gandalf.ajouterUneArme(Chêne);
+        
+        Conan.ajouterUneArme(Excalibur);
+        Conan.ajouterUneArme(Durandal);
+        
+        Gandalf.armeEquiper(1);
+        Conan.armeEquiper(1);
+  
+        System.out.println(Gandalf.sacados);
         int taille2 = Personnages.size();
         String affichage2 ="";
         for(int i = 0; i<taille2; i++){

@@ -14,7 +14,8 @@ import java.util.ArrayList;
 public abstract class personnages {
     protected String nom;
     protected int niveauDeVie;
-    ArrayList <Armes> sacados  = new ArrayList();
+    public ArrayList <Armes> sacados  = new ArrayList();
+    Armes armeEnMain = null;
 
     public personnages(String nom, int niveauDeVie) {
         this.nom = nom;
@@ -37,5 +38,18 @@ public abstract class personnages {
         if (sacados.size()<6){
             sacados.add(a);
         }
+    }
+
+    public Armes getArmeEnMain() {
+        return armeEnMain;
+    }
+    public void armeEquiper(int i){
+    if (i>=0 && i<=sacados.size()-1){
+        armeEnMain = sacados.get(i);
+        System.out.println("Arme trouvée et en main !");
+    }
+    else{
+        System.out.println("L'arme demandée n'existe pas ...");
+    }
     }
 }

@@ -18,7 +18,7 @@ public class Guerrier extends personnages {
 
     @Override
     public String toString() {
-        return "Guerrier{ nom = "+nom+ " niveau de vie = "+ niveauDeVie + "cheval=" + cheval + '}';
+        return "Guerrier{ nom = "+nom+ " niveau de vie = "+ niveauDeVie + "cheval=" + cheval +" Arme en main = " + armeEnMain+ '}';
     }
 
     public void setCheval(boolean cheval) {
