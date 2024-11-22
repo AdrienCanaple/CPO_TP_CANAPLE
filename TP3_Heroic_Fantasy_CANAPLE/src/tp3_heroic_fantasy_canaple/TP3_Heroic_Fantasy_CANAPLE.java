@@ -4,13 +4,14 @@
  */
 package tp3_heroic_fantasy_canaple;
 
-import personnages.personnages;
 import personnages.Magicien;
+import personnages.personnages;
 import personnages.Guerrier;
 import Armess.Baton;
 import Armess.Epee;
 import Armess.Armes;
 import java.util.ArrayList;
+import static personnages.personnages.nombrePersonnage;
 
 /**
  *
@@ -73,6 +74,11 @@ public class TP3_Heroic_Fantasy_CANAPLE {
             affichage2 = affichage2 + Personnages.get(i)+"\n";
         }
         System.out.println(affichage2);
+        
+        Conan.finalize();
+        System.out.println(nombrePersonnage);
+        
+        
     }
     
 }
