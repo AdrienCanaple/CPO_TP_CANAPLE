@@ -4,16 +4,21 @@
  */
 package personnages;
 
+import personnages.personnages;
+import personnages.personnages;
+
 /**
  *
  * @author adrie
  */
 public class Magicien extends personnages {
     boolean confirmé;
+    static int nombreMagicien = 0;
 
     public Magicien(String nom, int niveauDeVie, boolean confirmé) {
         super(nom, niveauDeVie);
         this.confirmé = confirmé;
+        nombreMagicien++;
     }
 
     @Override
@@ -23,5 +28,9 @@ public class Magicien extends personnages {
 
     public void setConfirmé(boolean confirmé) {
         this.confirmé = confirmé;
+    }
+    
+    public void finalize(){
+        nombreMagicien = nombreMagicien - 1;
     }
 }

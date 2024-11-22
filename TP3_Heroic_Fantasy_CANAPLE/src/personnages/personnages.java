@@ -16,10 +16,12 @@ public abstract class personnages {
     protected int niveauDeVie;
     public ArrayList <Armes> sacados  = new ArrayList();
     Armes armeEnMain = null;
+    static public int nombrePersonnage = 0;
 
     public personnages(String nom, int niveauDeVie) {
         this.nom = nom;
         this.niveauDeVie = niveauDeVie;
+        nombrePersonnage++;
     }
 
     public int getNiveauDeVie() {
@@ -52,4 +54,10 @@ public abstract class personnages {
         System.out.println("L'arme demandée n'existe pas ...");
     }
     }
+    
+    @Override
+    public void finalize(){
+        nombrePersonnage = nombrePersonnage - 1;
+    }
+    
 }

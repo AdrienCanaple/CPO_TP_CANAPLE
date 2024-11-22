@@ -10,10 +10,12 @@ package personnages;
  */
 public class Guerrier extends personnages {
     boolean cheval;
+    static int nombreGuerrier = 0;
 
     public Guerrier(String nom, int niveauDeVie, boolean cheval) {
         super(nom, niveauDeVie);
         this.cheval = cheval;
+        nombreGuerrier++;
     }
 
     @Override
@@ -23,5 +25,9 @@ public class Guerrier extends personnages {
 
     public void setCheval(boolean cheval) {
         this.cheval = cheval;
+    }
+    
+    public void finalize(){
+               nombreGuerrier = nombreGuerrier - 1;
     }
 }
