@@ -6,12 +6,13 @@ package personnages;
 
 import Armess.Armes;
 import java.util.ArrayList;
+import tp3_heroic_fantasy_canaple.etreVivant;
 
 /**
  *
  * @author adrie
  */
-public abstract class personnages {
+public abstract class personnages  implements etreVivant {
     protected String nom;
     protected int niveauDeVie;
     public ArrayList <Armes> sacados  = new ArrayList();

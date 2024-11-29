@@ -28,6 +28,10 @@ public class Guerrier extends personnages {
     }
     
     public void finalize(){
-               nombreGuerrier = nombreGuerrier - 1;
+        try {
+            nombreGuerrier = nombreGuerrier - 1;
+        } finally {
+            super.finalize();
+        }
     }
 }

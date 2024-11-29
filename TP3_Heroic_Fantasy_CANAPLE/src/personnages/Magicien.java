@@ -31,6 +31,10 @@ public class Magicien extends personnages {
     }
     
     public void finalize(){
-        nombreMagicien = nombreMagicien - 1;
+        try {
+            nombreMagicien -= 1;
+        } finally {
+            super.finalize();
+        }
     }
 }
