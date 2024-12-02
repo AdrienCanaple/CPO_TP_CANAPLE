@@ -60,5 +60,20 @@ public abstract class personnages  implements etreVivant {
     public void finalize(){
         nombrePersonnage = nombrePersonnage - 1;
     }
-    
+    @Override
+    public void seFatiguer(){
+        niveauDeVie-= 10;
+    }
+    @Override
+    public boolean estVivant(){
+        boolean result = true;
+        if (niveauDeVie<=0){
+            result = false;
+        }
+        return result;
+    }
+    @Override
+    public void estAttaqué(int points){
+        niveauDeVie -= points;
+    }
 }

@@ -5,7 +5,6 @@
 package personnages;
 
 import personnages.personnages;
-import personnages.personnages;
 
 /**
  *
